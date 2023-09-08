@@ -58,14 +58,14 @@ const App = () => {
   const keyPress = (e) => {
     const signals = ["+", "-", "/", "*"];
     const key = e.key;
-    console.log(key);
+
     if (key === 'Enter') {
       return handleOperation("=");
     }
     if (key === "Backspace") {
       const deleteLast = allCount.slice(0, -1)
       setAllCount(deleteLast)
-      console.log("back");
+
     }
     if (/[0-9+\-*/=]/.test(key)) {
 
