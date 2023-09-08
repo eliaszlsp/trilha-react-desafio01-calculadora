@@ -30,3 +30,4 @@ export const Column = styled.div`
     align-items: center;
 `
 
+
